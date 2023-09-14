@@ -50,7 +50,6 @@ class PostController extends BaseController
    */
   public function store(StorePostRequest $request)
   {
-    dd($request->all());
     try {
       $data = $request->input();
       $item = Post::create($data);
